@@ -1,0 +1,63 @@
+/* resert do css*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(/imgs/capa.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 1090px;
+}
+.navbar {
+    background-color: rgb(72, 6, 6);
+    color: #fff
+}
+.navbar ul {
+    display: flex;
+    gap: 10px;
+    list-style: none;
+}
+
+
+#titulo{
+    text-align: center;
+    color: rgb(106, 31, 31);
+   
+    
+}
+.mountains-of-christmas-regular {
+  font-family: "Mountains of Christmas", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.mountains-of-christmas-bold {
+  font-family: "Mountains of Christmas", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+/*Contato.html*/
+.formulario-campo {
+  display: flex;
+  flex: 1;
+  gap: 16px;
+  width: 30%;
+  justify-content: space-between;
+  margin-bottom: 16px;
+  align-items: center;
+  
+}
+.formulario-campo label {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 400;
+}
+.formulario-campo input,
+.formulario-campo select,
+.formulario-campo textarea {
+    width: 300px;
+    justify-self: flex-end;
+}
