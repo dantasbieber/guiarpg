@@ -1,63 +1,126 @@
-     gg   /* resert do css*/
-   * {
+/* RESET */
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-body{
-    background-image: url(/imgs/capa.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 1090px;
+
+/* Corpo geral */
+body {
+    background-color: #0a0a0a; /* preto suave */
+    color: #8b0000; /* vermelho sangue */
+    font-family: Arial, sans-serif;
 }
+
+/* NAVBAR CONTAINER */
 .navbar {
-    background-color: rgb(72, 6, 6);
-    color: #fff
-}
-.navbar ul {
+    width: 100%;
+    background-color: #150000; 
+    padding: 10px 0;
     display: flex;
-    gap: 10px;
+    justify-content: center;
+    box-shadow: 0 0 20px rgba(255, 0, 0, 0.1);
+}
+
+/* LISTA */
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+/* BOTÕES DO MENU */
+.navbar li {
     list-style: none;
 }
 
+.navbar a {
+    text-decoration: none;
+    padding: 12px 20px;
+    background-color: #1a0000;
+    color: #b30000; /* vermelho forte */
+    border: 2px solid #3a0000;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: 0.3s ease;
+}
 
-#titulo{
+/* HOVER SINISTRO */
+.navbar a:hover {
+    background-color: #ff0000;
+    color: #0a0a0a;
+    border-color: #ff0000;
+    box-shadow: 0 0 15px #ff0000;
+}
+
+/* TÍTULOS */
+#titulo,
+h1 {
     text-align: center;
-    color: rgb(106, 31, 31);
-   
-    
-}
-.mountains-of-christmas-regular {
-  font-family: "Mountains of Christmas", serif;
-  font-weight: 700;
-  font-style: normal;
+    margin: 40px 0;
+    color: #7b0f0f; /* vermelho vinho */
+    font-size: 2.4rem;
+    letter-spacing: 1px;
+    text-shadow: 0 0 10px #300000;
 }
 
-.mountains-of-christmas-bold {
-  font-family: "Mountains of Christmas", serif;
-  font-weight: 700;
-  font-style: normal;
+/* FORMULÁRIO */
+form {
+    width: 90%;
+    max-width: 500px;
+    margin: 40px auto;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 30px;
+    border-radius: 10px;
+    border: 2px solid #470000;
+    box-shadow: 0 0 15px rgba(255, 0, 0, 0.15);
 }
 
-/*Contato.html*/
 .formulario-campo {
-  display: flex;
-  flex: 1;
-  gap: 16px;
-  width: 30%;
-  justify-content: space-between;
-  margin-bottom: 16px;
-  align-items: center;
-  
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
 }
-.formulario-campo label {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-weight: 400;
-}
+
 .formulario-campo input,
 .formulario-campo select,
 .formulario-campo textarea {
-    width: 300px;
-    justify-self: flex-end;
+    padding: 10px;
+    background-color: #1a0000;
+    border: 1px solid #470000;
+    border-radius: 5px;
+    color: #ff4d4d;
+}
+
+textarea {
+    height: 120px;
+}
+
+/* BOTÃO */
+button {
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    background-color: #680000;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s ease;
+}
+
+button:hover {
+    background-color: #ff0000;
+    box-shadow: 0 0 12px #ff0000;
+}
+
+/* CAIXAS DE TEXTO / SEÇÕES */
+.atividade-container {
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: rgba(10, 0, 0, 0.7);
+    border-radius: 10px;
+    border: 2px solid #3a0000;
+    box-shadow: 0 0 15px rgba(255, 0, 0, 0.1);
+    color: #b30000;
 }
